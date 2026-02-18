@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>Airbnb Price Optimization Dashboard</title>
-</head>
 <body style="font-family: Arial, sans-serif; line-height:1.6;">
 
   <h1>Airbnb Price Optimization Dashboard</h1>
