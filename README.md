@@ -30,10 +30,10 @@ How can Airbnb hosts optimize their pricing strategy to maximize revenue without
 <div class="card">
 <h2>📊 Dataset Information</h2>
 <ul>
-<li><strong>Source:</strong> Airbnb NYC Open Data (Kaggle)</li>
+<li><strong>Source:</strong> https://www.kaggle.com/datasets/arianazmoudeh/airbnbopendata</li>
 <li><strong>Rows:</strong> ~9,984 Listings</li>
 <li><strong>Sector:</strong> Hospitality & Tourism Analytics</li>
-<li><strong>Tools Used:</strong> Google Sheets, Excel, GitHub</li>
+<li><strong>Tools Used:</strong> Google Sheets, GitHub</li>
 </ul>
 </div>
 
@@ -45,14 +45,10 @@ How can Airbnb hosts optimize their pricing strategy to maximize revenue without
 <li>Handled missing values</li>
 <li>Converted price from text to numeric</li>
 <li>Treated pricing outliers</li>
+<li>Changed datatype</li>
 <li>Created Occupancy Rate & Estimated Revenue columns</li>
 </ul>
 
-<div class="highlight">
-<strong>Estimated Revenue Formula:</strong><br>
-Price × (365 − availability_365)
-</div>
-</div>
 
 <div class="card">
 <h2>📈 KPI Framework</h2>
@@ -61,7 +57,7 @@ Price × (365 − availability_365)
 <div class="kpi-box">Average Market Price</div>
 <div class="kpi-box">Average Occupancy Rate</div>
 <div class="kpi-box">Average Estimated Revenue</div>
-<div class="kpi-box">Best Performing Room Type</div>
+<div class="kpi-box">Revenue Per Listing</div>
 <div class="kpi-box">Optimal Price Band</div>
 </div>
 
@@ -108,7 +104,7 @@ Price × (365 − availability_365)
 </div>
 
 <footer>
-Group 18 – Newton School of Technology<br>
+Group 18(Section-B) – Newton School of Technology<br>
 Airbnb Pricing Optimization Project
 </footer>
 
