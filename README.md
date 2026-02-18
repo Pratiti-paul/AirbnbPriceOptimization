@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Airbnb Pricing Optimization</title>
-
-
-</head>
-
 <body>
 
 <div class="container">
