@@ -1,89 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Airbnb Pricing Optimization</title>
 
-<style>
-    body {
-        font-family: 'Segoe UI', sans-serif;
-        background-color: #f4f6f9;
-        margin: 0;
-        padding: 0;
-        color: #333;
-    }
 
-    .container {
-        width: 85%;
-        margin: auto;
-        padding: 40px 0;
-    }
-
-    h1 {
-        text-align: center;
-        color: #1f4e79;
-        font-size: 36px;
-    }
-
-    h2 {
-        color: #2c3e50;
-        margin-top: 40px;
-        border-bottom: 2px solid #ddd;
-        padding-bottom: 5px;
-    }
-
-    p {
-        line-height: 1.6;
-        font-size: 16px;
-    }
-
-    ul {
-        margin-left: 20px;
-        line-height: 1.6;
-    }
-
-    .card {
-        background: white;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-        margin-top: 20px;
-    }
-
-    .highlight {
-        background: #e8f0fe;
-        padding: 15px;
-        border-left: 5px solid #1f4e79;
-        margin-top: 15px;
-        border-radius: 5px;
-    }
-
-    .kpi {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
-        margin-top: 20px;
-    }
-
-    .kpi-box {
-        background: #1f4e79;
-        color: white;
-        padding: 20px;
-        border-radius: 8px;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    footer {
-        text-align: center;
-        margin-top: 50px;
-        padding: 20px;
-        background: #1f4e79;
-        color: white;
-        border-radius: 10px;
-    }
-</style>
 </head>
 
 <body>
