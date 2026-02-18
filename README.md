@@ -1,108 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
-<body>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Airbnb Price Optimization Dashboard</title>
+</head>
+<body style="font-family: Arial, sans-serif; line-height:1.6;">
 
-<div class="container">
+  <h1>Airbnb Price Optimization Dashboard</h1>
 
-<h1>🏠 Airbnb Pricing Optimization – NYC Market Analysis</h1>
+  <h2>Project Overview</h2>
+  <p>
+    This project analyzes Airbnb listing data to identify pricing strategies that maximize revenue while maintaining competitive occupancy rates.
+  </p>
+  <p>The dashboard supports:</p>
+  <ul>
+    <li>Revenue optimization decisions</li>
+    <li>Location-based pricing analysis</li>
+    <li>Room type performance comparison</li>
+    <li>Price band profitability evaluation</li>
+  </ul>
+  <p>
+    The objective is to help Airbnb hosts make <strong>data-driven pricing decisions</strong> 
+    using revenue trends, occupancy insights, and location performance.
+  </p>
 
-<div class="card">
-<h2>📌 Project Overview</h2>
-<p>
-This project analyzes the New York Airbnb Open Data dataset to develop a data-driven pricing optimization framework for Airbnb hosts. 
-The objective is to identify how pricing strategies based on location, room type, demand indicators, and reviews can maximize estimated revenue while maintaining competitive occupancy levels.
-</p>
-</div>
+  <hr>
 
-<div class="card">
-<h2>🎯 Business Problem</h2>
-<div class="highlight">
-How can Airbnb hosts optimize their pricing strategy to maximize revenue without significantly reducing occupancy?
-</div>
-</div>
+  <h2>File Details</h2>
+  <ul>
+    <li><strong>Project Name:</strong> Airbnb Price Optimization – G18</li>
+    <li><strong>Total Records:</strong> ~9,900+ listings</li>
+    <li><strong>Tool Used:</strong> Google Sheets (Pivot Tables + Dashboard)</li>
+    <li><strong>Output:</strong> Interactive Analytical Dashboard for Airbnb Price Optimization</li>
+  </ul>
 
-<div class="card">
-<h2>📊 Dataset Information</h2>
-<ul>
-<li><strong>Source:</strong> https://www.kaggle.com/datasets/arianazmoudeh/airbnbopendata</li>
-<li><strong>Rows:</strong> ~9,984 Listings</li>
-<li><strong>Sector:</strong> Hospitality & Tourism Analytics</li>
-<li><strong>Tools Used:</strong> Google Sheets, GitHub</li>
-</ul>
-</div>
+  <hr>
 
-<div class="card">
-<h2>🧹 Data Cleaning & Preparation</h2>
-<ul>
-<li>Removed duplicate listings</li>
-<li>Standardized categorical variables</li>
-<li>Handled missing values</li>
-<li>Converted price from text to numeric</li>
-<li>Treated pricing outliers</li>
-<li>Changed datatype</li>
-<li>Created Occupancy Rate & Estimated Revenue columns</li>
-</ul>
-</div>
+  <h2>Data Dictionary</h2>
+  <table border="1" cellpadding="8" cellspacing="0">
+    <tr>
+      <th>Column Name</th>
+      <th>Description</th>
+      <th>Data Type</th>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>Unique listing identifier</td>
+      <td>Integer</td>
+    </tr>
+    <tr>
+      <td>Neighbourhood_Group</td>
+      <td>Borough (Bronx, Brooklyn, Manhattan, Queens, Staten Island)</td>
+      <td>Categorical</td>
+    </tr>
+    <tr>
+      <td>Room_Type</td>
+      <td>Entire Home/Apt, Private Room, Shared Room</td>
+      <td>Categorical</td>
+    </tr>
+    <tr>
+      <td>Price</td>
+      <td>Price per night (USD)</td>
+      <td>Float</td>
+    </tr>
+    <tr>
+      <td>Occupancy Rate</td>
+      <td>Estimated occupancy ratio</td>
+      <td>Float</td>
+    </tr>
+    <tr>
+      <td>Estimated Revenue</td>
+      <td>Calculated annual revenue per listing</td>
+      <td>Float</td>
+    </tr>
+  </table>
 
-<div class="card">
-<h2>📈 KPI Framework</h2>
+  <hr>
 
-<div class="kpi">
-<div class="kpi-box">Average Market Price</div>
-<div class="kpi-box">Average Occupancy Rate</div>
-<div class="kpi-box">Average Estimated Revenue</div>
-<div class="kpi-box">Revenue Per Listing</div>
-<div class="kpi-box">Optimal Price Band</div>
-</div>
+  <h2>Key Dashboard KPIs</h2>
+  <ul>
+    <li>Average Price</li>
+    <li>Revenue per Listing</li>
+    <li>Average Estimated Revenue</li>
+    <li>Optimal Price Band</li>
+    <li>Average Occupancy Rate</li>
+    <li>Correlation between Price & Occupancy</li>
+  </ul>
 
-</div>
+  <hr>
 
-<div class="card">
-<h2>🔍 Analytical Approach</h2>
-<ul>
-<li>Revenue by Room Type Analysis</li>
-<li>Revenue by Neighbourhood Group</li>
-<li>Price Band Segmentation</li>
-<li>Price vs Occupancy Correlation</li>
-</ul>
-</div>
+  <h2>Key Analysis Sections</h2>
 
-<div class="card">
-<h2>💡 Key Insights</h2>
-<ul>
-<li>Manhattan commands the highest pricing premium.</li>
-<li>High price band listings generate the strongest revenue.</li>
-<li>Occupancy does not significantly decline at higher price levels.</li>
-<li>Location is the dominant pricing lever.</li>
-</ul>
-</div>
+  <h3>1. Revenue by Room Type</h3>
+  <p>
+    Compares estimated revenue across different room types to determine 
+    which listing type generates the highest returns.
+  </p>
 
-<div class="card">
-<h2>📌 Recommendations</h2>
-<ul>
-<li>Implement borough-based dynamic pricing.</li>
-<li>Prioritize high-performing room types.</li>
-<li>Optimize minimum night policies.</li>
-<li>Use mid-to-high price band strategy in premium locations.</li>
-</ul>
-</div>
+  <h3>2. Revenue by Neighbourhood Group</h3>
+  <p>
+    Evaluates borough-level performance to identify high-demand and 
+    high-revenue locations.
+  </p>
 
-<div class="card">
-<h2>🚀 Future Scope</h2>
-<ul>
-<li>Predictive pricing models</li>
-<li>Seasonal demand forecasting</li>
-<li>Sentiment analysis on reviews</li>
-<li>Automated data pipeline integration</li>
-</ul>
-</div>
+  <h3>3. Price Band Performance</h3>
+  <p>
+    Analyzes how different pricing tiers impact revenue and occupancy.
+  </p>
 
-<footer>
-Group 18(Section-B) – Newton School of Technology<br>
-Airbnb Pricing Optimization Project
-</footer>
+  <h3>4. Reviews vs Revenue</h3>
+  <p>
+    Examines whether higher customer ratings are associated with increased revenue.
+  </p>
 
-</div>
+  <h3>5. Price vs Occupancy Correlation</h3>
+  <p>
+    Measures the strength of relationship between price increases and occupancy rate changes.
+  </p>
+
+  <hr>
+
+  <h2>Business Problem Statement</h2>
+  <p>
+    <strong>
+    How can Airbnb hosts optimize pricing based on location, room type, and demand trends 
+    to maximize revenue while staying competitive?
+    </strong>
+  </p>
+
+  <hr>
+
+  <h2>Data Cleaning Process</h2>
+  <ul>
+    <li>Removed blank and duplicate records</li>
+    <li>Standardized neighborhood names</li>
+    <li>Created Occupancy Rate calculation</li>
+    <li>Generated Estimated Revenue formula</li>
+    <li>Created Price Band categories</li>
+    <li>Handled divide-by-zero and negative value errors</li>
+  </ul>
+
+  <hr>
+
+  <h2>Analytical Techniques Used</h2>
+  <ul>
+    <li>Pivot Tables</li>
+    <li>Aggregation (Average, Count, Sum)</li>
+    <li>Correlation Analysis</li>
+    <li>Data Categorization</li>
+    <li>KPI Scorecards</li>
+    <li>Interactive Dashboard with Slicers</li>
+  </ul>
+
+  <hr>
+
+  <h2>Final Outcome</h2>
+  <p>
+    The dashboard provides clear, data-driven insights into pricing strategy, 
+    occupancy behavior, and revenue optimization opportunities for Airbnb hosts.
+  </p>
+
+  <p><strong>Result:</strong> A structured pricing decision framework for maximizing Airbnb revenue.</p>
 
 </body>
 </html>
