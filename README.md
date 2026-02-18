@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <body>
@@ -43,7 +42,7 @@ How can Airbnb hosts optimize their pricing strategy to maximize revenue without
 <li>Changed datatype</li>
 <li>Created Occupancy Rate & Estimated Revenue columns</li>
 </ul>
-
+</div>
 
 <div class="card">
 <h2>📈 KPI Framework</h2>
@@ -107,8 +106,3 @@ Airbnb Pricing Optimization Project
 
 </body>
 </html>
-=======
-<h>🏠 Airbnb Pricing Optimization Analysis<h>
-
-<p>This project analyzes Airbnb listing data to identify optimal pricing strategies based on location, room type, demand indicators, and review patterns. The objective is to help hosts determine competitive pricing ranges that maximize estimated revenue while maintaining healthy occupancy levels. Through data cleaning, KPI development, and analytical exploration, the project uncovers relationships between price, demand, and listing characteristics to provide data-driven pricing recommendations.<p>
->>>>>>> 904f918 (my_commit)
